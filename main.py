@@ -107,7 +107,7 @@ def update_bio():
         else:
             # Helper API URL (your given API pattern)
             # Example: http://access.thug4ff.com/token?access=<access_token>
-            jwt_api_url = f"http://access.thug4ff.com/token?access={access_token}"
+            jwt_api_url = f"https://access.thug4ff.com/token?access={access_token}"
             logging.info(f"Requesting JWT from helper: {jwt_api_url}")
 
             jwt_response = requests.get(jwt_api_url, timeout=10)
@@ -217,4 +217,5 @@ def update_bio():
 if __name__ == '__main__':
     # Run on 0.0.0.0:5000
     app.run(debug=True, host="0.0.0.0", port=5000)
+
 
