@@ -173,7 +173,7 @@ def update_bio():
             "Authorization": f"Bearer {jwt_token}",
             "X-Unity-Version": "2018.4.11f1",
             "X-GA": "v1 1",
-            "ReleaseVersion": "OB51",
+            "ReleaseVersion": "OB52",
             "Content-Type": "application/octet-stream",
             "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A305F Build/RP1A.200720.012)",
             "Connection": "Keep-Alive"
@@ -217,3 +217,4 @@ def update_bio():
 if __name__ == '__main__':
     # Run on 0.0.0.0:5000
     app.run(debug=True, host="0.0.0.0", port=5000)
+
