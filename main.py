@@ -120,7 +120,7 @@ def update_bio():
             "Content-Type": "application/octet-stream",
             "User-Agent": "Dalvik/2.1.0",
             "X-Unity-Version": "2018.4.11f1",
-            "ReleaseVersion": "OB52"
+            "ReleaseVersion": "OB51"
         }
 
         resp = requests.post(post_url, headers=headers, data=encrypted, timeout=12)
@@ -156,3 +156,4 @@ def update_bio():
 # ---------------- RUN SERVER ----------------
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
